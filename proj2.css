@@ -1,0 +1,507 @@
+@font-face {
+    font-family: ld;
+    src: url(./Druk-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#main{
+    height: 720vh;
+    width: 100%;
+    background-color: #F4F2E8;
+    overflow: hidden;  
+}
+#nav{
+    z-index: 9;
+    position: relative;
+    position:fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 15%;
+    width: 100%;
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    background-color: #F3F0E7;
+    justify-content: space-between;
+    border-bottom: 1px double #000;
+}
+#nav::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1.3vh;
+    border:  2px solid #000;
+}
+#nav #icon{
+    height: 100%;
+    width: 8%;
+    font-size: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    height: 4vw;
+}
+#nav button{
+    padding: 1vw 2.8vw;
+    background-color: rgb(192, 41, 41);
+    border: none;
+    font-family: druk;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5vw;
+}
+#section1{
+    margin-top: 15vw;
+    height: 80vh;
+    width: 100vw;
+    padding: 1vw 2vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#sec1ctr img{
+    position: absolute;
+    left: 52%;
+    top: 5%;
+    transform: translate(-50%,-50%);
+    height: 45vw;
+    z-index: 10;
+}
+#sec1left{
+    width: 35%;
+    font-family: druk;
+}
+#sec1left h1{
+    font-size: 9vw;
+    line-height: 7vw;
+    color: rgb(37, 31, 31);
+}
+#sec1left h5{
+    font-size: 2vw;
+    line-height: 4vw;
+    font-family: dancing script;
+}
+#sec1left h4{
+    color: rgb(37, 31, 31);
+    line-height: 4vw;
+    font-size: 2.5vw;
+}
+#sec1left h6{
+    font-weight: 100;
+    font-size: 1vw;
+    color: rgb(29, 26, 26);
+    line-height: 1.3vw;
+    font-family: abadi-mt-condensed,Arial,Helvetica,sans-serif;
+}
+#sec1right{
+    width: 20vw;
+    margin-top: 2vw;
+    margin-right: 7vw;
+    font-family: druk;
+    color: rgb(52, 154, 188);
+    text-transform: uppercase;
+}
+#v{
+    margin-left: -1vw;
+}
+#sec1right h2{
+    font-size: 3vw;
+    font-weight: 900;
+}
+#sec1right h1{
+    font-size: 9vw;
+    font-weight: 900;
+    line-height: 7vw;
+}
+#sec1right img{
+    height: 8vw;
+    margin-left: -7.5vw;
+    margin-top: 2vw;
+}
+#brk{
+    height: 30vh;
+    width: 100vh;
+}
+#section2{
+    height: 100vh;
+    width: 100vw;
+    padding: 1vw 2vw; 
+}
+#section2 h1{
+    text-align: center;
+    font-family: druk;
+    font-weight: 900;
+    font-size: 23vw;
+    color: rgb(52, 154, 188);
+}
+#section2 #sec2crt{
+    display: flex;
+    gap: 20vw;
+    justify-content: space-evenly;
+}
+#sec2left{
+    margin-left: -7vw;
+}
+#sec2left img{
+    width: 30vw;
+}
+#sec2left h4{
+    font-family: dancing script;
+    font-size: 1.8vw;
+    line-height: .8;
+}
+#sec2right{
+    width: 28vw;
+}
+#sec2right h5{
+    font-family: gilroy light;
+    font-size: 1.2vw;
+    font-weight: 100;
+    opacity: .7;
+}
+#sec2right h3{
+    font-family: druk;
+    font-size: 3vw;
+    line-height: 3;
+}
+#section3{
+    height: 100vh;
+    width: 100vw;
+    padding: 0 2vw;
+}
+#section3 h1{
+    text-align: center;
+    font-family: druk;
+    font-weight: 900;
+    margin-top: 20vw;
+    font-size: 18vw;
+    color: rgb(52, 154, 188);
+}
+#sec3ctr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sec3right{
+
+    height: 20vw;
+    width: 25vw;
+}
+#sec3rt_img{
+
+    position: relative;
+    height: 15vw;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sec3rt_img h5{
+    font-family: dancing script;
+    font-size: 2vw;
+    font-style: italic;
+    transform: rotate(-10deg);
+}
+#sec3rt_img img{
+    height: 100%;
+}
+#sec3rt_img::before{
+    content:"";
+    position: absolute;
+    bottom: 2.3vw;
+    right: -5%;
+    width: 110%;
+    border-bottom:1px solid #000;
+}
+#sec3rt_img::after{
+    content:"";
+    position: absolute;
+    bottom: 2vw;
+    right: -5%;
+    width: 110%;
+    border-bottom:3px solid #000;
+}
+#sec3right h2{
+    font-size: 2.7vw;
+    font-family: druk;
+}
+#sec3right h6{
+    font-family: gilroy light;
+    font-weight: 100;
+    opacity: .8;
+    font-size: 1.1vw;
+}
+#sec3left{
+    height: 30vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+#sec3left h3{
+    position: relative;
+    font-family: druk;
+    line-height: 1;
+    font-size: 2.5vw;
+}
+#sec3left i{
+    font-size: 2vw;
+}
+#sec3left h3::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom:1px solid #000;
+}
+#sec3left h3::after{
+    content:"";
+    position: absolute;
+    bottom: -.3vw;
+    left: 0;
+    width: 100%;
+    border-bottom:3px solid #000;
+}
+#sec3leftbtm{
+    height: 10vw;
+    width: 30vw;
+    display: flex;
+    padding: 1vw 0;
+    justify-content: space-between;
+
+}
+#sec3leftbtm h6{
+    width: 50%;
+    font-family: gilroy light;
+    font-weight: 100;
+    opacity: .8;
+    font-size: 1.1vw;
+}
+#sec3leftbtm h2{
+    font-family: druk;
+    font-size: 5.5vw;
+}
+#section4{
+    height: 140vh;
+    width: 100vw;
+}
+#section4 .txt4{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    flex-direction: column;
+}
+#section4 .txt4 h3{
+    margin-left: 2vw;
+    height: 2.7vw;
+    font-size: 2.5vw;
+    line-height: 1;
+    font-family: druk;
+    border-bottom: 1px solid #000;
+    width: 5vw;
+    text-align: center;
+}
+#section4 .txt4 h6{
+    width: 12vw;
+    margin-left: 2.5vw;
+    text-align: center;
+    height: 10vw;
+    font-size: 1.1vw;
+    font-family: gilroy light;
+    font-weight: 100;
+}
+
+#section4 #img1{
+    height: 23vw;
+    width: 21.5vw;
+    background-position: center;
+    background-size: contain;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2022/08/Hoppy-Refresher.png);
+}
+
+#section4 #img1 img{
+    background-color: transparent;
+    margin-top: 3vw;
+    margin-left:3vw;
+    margin-bottom: -1vw;
+    transform: rotate(45deg);
+}
+#section4 #img2{
+    margin-top: -8vw;
+    height: 28vw;
+    width: 26.2vw;
+    margin-left: 20vw;
+    background-position: center;
+    background-size: contain;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2022/08/Hoppy-Refresher.png);
+}
+
+#section4 #img2 img{
+    background-color: transparent;
+    margin-top: 2vw;
+    margin-left:4vw;
+    margin-bottom: -.5vw;
+}
+#section4 #img2 h6{
+    width:15vw;
+    margin-left: 4vw;
+}
+#section4 #img2 h3{
+    width: 7vw;
+    margin-left: 4.5vw;
+}
+#section4 #img3{
+    margin-top: -35vw;
+    height: 33vw;
+    width: 31vw;
+    margin-left: 60vw;
+    background-position: center;
+    background-size: contain;
+    background-image: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/splat-black.png);
+}
+#section4 #img3 h3{
+    color: white;
+    width: 9vw;
+    margin-left: 5vw;
+    border-bottom: 1px solid white;
+}
+#section4 #img3 h6{
+    color: white;
+    width: 18vw;
+    margin-left: 5vw;
+}
+#section4 #img3 img{
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
+#section4 #img4 img{
+    margin-top: -10vw;
+    margin-left: 5vw;
+    height: 37vw;
+    transform: rotate(-17deg);
+}
+#section5{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#section5 h3{
+    margin-top: 5vw;
+    font-size: 2.5vw;
+    line-height: .5;
+    font-family: dancing script;
+}
+#section5 h2{
+    font-family: druk;
+    font-size: 7vw;
+}
+#section5 h5{
+    font-size: 1.2vw;
+    line-height: .5;
+    font-weight: 300;
+}
+#section6{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12vw 0;
+}
+#section6::before{
+    content: "";
+    height: 11vw;
+    width: 100vw;
+    background-image:url(./footer-t-removebg-preview.png);
+    background-size: cover;
+    background-position:100vw 23vh;
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+}
+#section6>img{
+    margin-top: 2vw;
+    height: 10vw;
+}
+#section6 #txt6{
+    width: 80%;
+    display: flex;
+    gap: 20vw;
+}
+#txt6 #ltxt6{
+    font-family: druk;
+    display: flex;
+    flex-direction: column;
+}
+#ltxt6 a{
+    margin-left: 3vw;
+    text-decoration: none;
+    color: #F4F2E8;
+    font-size: 6vw;
+    font-weight: 900;
+    line-height: .8;
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#ltxt6 a:hover{
+    color: rgb(191, 36, 36);
+}
+
+#rtxt6 h6{
+    color: #F3F0E7;
+    font-family: dancing script;
+    font-weight: 100;
+    font-size: 2vw;
+}
+#rtxt6 form{
+    padding: 0 .3vw;
+    height: 4vw;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F0E7;
+}
+#rtxt6 input{
+    font-family: gilroy;
+    margin-left: 1vw;
+    background-color: transparent;
+    border: none;
+}
+#rtxt6 button{
+    height: 90%;
+    width: 30%;
+    font-size: 1.5vw;
+    font-family: druk;
+    color: #F3F0E7;
+    background-color: black;
+    border: none;
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#rtxt6 button:hover{
+    background-color: rgb(191, 36, 36);
+}
+#rtxt6 #icon6{
+    padding: 5vw 0;
+}
+#rtxt6 #icon6 i{
+ font-size: 2.5vw;  
+ color: #F3F0E7; 
+ margin-right:1.5vw;
+ cursor: pointer;
+}
